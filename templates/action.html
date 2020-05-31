@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+What You Can Do
+{% endblock %}
+
+{% block maincontent %}
+<script type="text/javascript" src="{{url_for('static', filename='js/action_buttons.js') }}"></script>
+<div id="actionmain">
+    <h3>Who Are You?</h3>
+    
+    <div class="whoareyoubutton" id="teacher" onclick="WhoAreYou('Teacher')" style="background-color: rgba(0, 100, 175, 0.35);"><p>A Teacher</p></div>
+    <div class="whoareyoubutton" id="student" onclick="WhoAreYou('Student')" style="background-color: rgba(0, 0, 0, 0.07);"><p>A Student</p></div>
+    <div class="whoareyoubutton" id="parent" onclick="WhoAreYou('Parent')" style="background-color: rgba(0, 0, 0, 0.07);"><p>A Parent</p></div>
+    
+    <div id="actiontext"><p1 id="action_text_block">TEACHER TEXT-CHANGE IN action.html PAGE</p1></div>
+</div>
+
+{% endblock %}
+
+

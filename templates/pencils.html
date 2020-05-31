@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+Pencils and the Environment
+{% endblock %}
+
+{% block maincontent %}
+<div id="pencilscontainer"></div>
+<script type="text/javascript" src="{{url_for('static', filename='js/infinite_scroll.js') }}"></script>
+<img id="bwpencil" src="{{url_for('static', filename='images/bwpencil.png')}}">
+<img id="bwpencilline" src="{{url_for('static', filename='images/bwpencilline.png')}}">
+{% endblock %}
+
+{% block description1 %}
+<b>1.6 billion</b> out of <b>2 billion</b> pencils are thrown away each year. <br><br>
+Wooden Pencils consume immense volumes of wood whereas mechanical pencils produce plastic waste that impacts the environment in all stages of manufacturing, usage and disposal.<br><br> 
+Therefore it is best to use pens with modular designs that allow for reusability using refillable ink cartridges.
+{% endblock %}
+
+{% block description2 %}
+Along with the implication of wood consumption, pencil manufacturing involves graphite mining.
+The process of mining graphite, shares the impacts of mining any material: deforestation, air pollution and unnatural erosion.<br><br>
+To limit this impact, companies such as Croyola have commited to planting a tree for every tree cut or ForestChoice employs a variety of environmental standards when producing pencils.
+{% endblock %}
+
+{% block further_reading %}
+<a href="http://geographyofpencils.weebly.com/enviromental.html" target="_blank">Global Impact of Pencils</a>
+{% endblock %}
+

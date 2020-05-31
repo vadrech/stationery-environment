@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body style="background-color:#d9d9d9;">
+
+<center>
+<title>Stationery | Environment</title>
+
+<table WIDTH="100%" HEIGHT="100%">
+
+    <td WIDTH="25%">
+        <h1>Stationery & Environment</h1>
+        
+        <div class="scrollable_description" id="description2">
+            <p> {% block description2 %} Description 2 {% endblock %} </p>
+        </div>
+        
+        <div class="sidenav" id="sidenav">
+            <div class="explorenav" id="explorenav" onclick="MinimizeMaximize()"><h>Explore</h></div>
+            <img id="sidebarminbutton" src="{{url_for('static', filename='images/sidebarminbutton.png')}}" onclick="MinimizeMaximize()">
+            <div class="sidenavlinks"><h><a href="/">Home</a></h></div>
+                
+            <div class="navhorizontallines" id="minmaxindicator" style="max-height: 1000px;"><hr style="border: 0px solid #262626; border-top: 1px solid #262626;" width="90%"></div>
+
+            <div class="sidenavlinks"><h onclick="ExpandableToggler('companies_list')"><a href="javascript:void(0)">Companies</a></h></div>
+            <div class="expandable_list" id="companies_list">
+                <div class="subpage"><a href="/Companies/OfficeMax">OfficeMax</a></div>
+                <div class="subpage"><a href="/Companies/OfficeDepot">Office Depot</a></div>
+                <div class="subpage"><a href="/Companies/Lyreco">Lyreco</a></div>
+                <div class="subpage"><a href="/Companies/OfficeWorld">Office World</a></div>
+            </div>
+            
+            <div class="navhorizontallines"><hr style="border: 0px solid #262626; border-top: 1px solid #262626;" width="90%"></div>
+            
+            <div class="sidenavlinks"><h><a href="/ProductEvaluation/Form">Product Evaluation</a></h></div>
+            
+            <div class="navhorizontallines"><hr style="border: 0px solid #262626; border-top: 1px solid #262626;" width="90%"></div>
+            
+            <div class="sidenavlinks"><h onclick="ExpandableToggler('dashboards_list')"><a href="javascript:void(0)">Dashboards</a></h></div>
+            <div class="expandable_list" id="dashboards_list">
+                <div class="subpage"><a href="/Dashboards/Pencils">The Impact of Pencils</a></div>
+                <div class="subpage"><a href="/Dashboards/Paper">The Reality of Paper</a></div>
+                <div class="subpage"><a href="/Dashboards/WholePicture">The Whole Picture</a></div>
+                <div class="subpage"><a href="/Dashboards/Action">What You Can Do</a></div>
+                <div class="subpage"><a href="/Dashboards/CompanyComparison">Company Comparison</a></div>
+            </div>
+        </div>
+    </td>
+    
+    
+    <td WIDTH="50%">
+        {% block maincontent %} Main Content {% endblock %}
+    </td>
+    
+    
+    <td WIDTH="25%" HEIGHT="100%">
+        <table HEIGHT="100%">
+            <tr HEIGHT="15%"><td>
+                <img id="titlecorner" src="{{url_for('static', filename='images/titlecorner.png')}}"> </img>
+                <div class="align_right"><h2><i>{% block title %} Webpage Title {% endblock %}</i></h2></div>
+            </td></tr>
+
+            <tr HEIGHT="70%"><td>
+            <div class="scrollable_description" id="description1">
+                    <p> {% block description1 %} Description 1 {% endblock %} </p>
+            </div>
+            </td></tr>
+
+            <tr HEIGHT="10%"><td>
+            <div class="scrollable_description" id="further_reading">
+                    <p>{% block further_reading %} Further Reading {% endblock %}</p>
+            </div>
+            </td></tr>
+            
+        </table>        
+    </td>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/main.js') }}"></script>
+
+</table>
+</center>
+
+
+</body>
+</html>
+
+
+

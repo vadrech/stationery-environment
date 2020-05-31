@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+Company Comparison
+{% endblock %}
+
+{% block description2 %}
+<p>Breakdown of Sunburst Chart:</p>
+<div id="SunburstSequence"></div>
+{% endblock %}
+
+{% block maincontent %}
+<div id="SunburstBG">
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <div id="SunburstMain">
+      <div id="SunburstChart">
+        <div id="SunburstExplanation" style="visibility: hidden;">
+          <span id="SunburstPercentage"></span><br/>
+          of visits begin with this sequence of pages
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{url_for('static', filename='js/sunburst_chart.js') }}"></script>
+</div>
+{% endblock %}
