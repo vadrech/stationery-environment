@@ -75,7 +75,7 @@ td {
 
 
 .scrollable_description {
-  overflow: scroll;
+  overflow: auto;
   padding: 0% 3%;
   margin-top: -9%;
 }
@@ -105,7 +105,7 @@ td {
   background: #ffd243;
   border: 3px solid #262626;
   border-radius: 30px;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 8px;
   -webkit-box-shadow: 12px -9px 18px -4px rgba(0,0,0,0.25);
   -moz-box-shadow: 12px -9px 18px -4px rgba(0,0,0,0.25);
@@ -204,7 +204,7 @@ img{
   width: 95%;
   height: 95%;
   vertical-align: middle;
-  overflow: scroll;
+  overflow: auto;
 }
 
 div.align_right{
@@ -243,7 +243,7 @@ div.align_right{
   width: 95%;
   height: 95%;
   vertical-align: middle;
-  overflow: scroll;
+  overflow: auto;
   background-image: url('../images/linedpaperbg.png');
   background-size: 100% auto;
   perspective: 3000px;
@@ -274,7 +274,7 @@ div.align_right{
   border-radius: 10px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  overflow: scroll;
+  overflow: auto;
   background-color: white;
   color: #000000;
   text-align: center;
@@ -292,7 +292,7 @@ div.align_right{
   border-radius: 10px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  overflow: scroll;
+  overflow: auto;
   background-color: white;
   color: #000000;
   text-align: center;
@@ -351,7 +351,7 @@ div.align_right{
   width: 95%;
   height: 95%;
   vertical-align: middle;
-  overflow: scroll;
+  overflow: auto;
   background: white;
   background-image: url('../images/papercardbg.png');
 }
@@ -426,7 +426,7 @@ div.align_right{
   width: 95%;
   height: 95%;
   vertical-align: middle;
-  overflow: scroll;
+  overflow: auto;
   background-image: url('../images/wholepicturebg.png');
   background-size: 100% auto;
   background-repeat: repeat;
@@ -443,7 +443,7 @@ div.align_right{
   width: 95%;
   height: 95%;
   vertical-align: middle;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .small_progress_bar{
@@ -527,7 +527,7 @@ div.align_right{
   width: 95%;
   height: 95%;
   vertical-align: middle;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   background: #fcfdff;
 }
